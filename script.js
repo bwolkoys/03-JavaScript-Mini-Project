@@ -8,12 +8,12 @@ function startRockPaperScissorGame() {
 
     if (userChoiceIsValid) {
         console.log("Choice is valid")
-        const computerChoice = choices[Math.floor(Math.random() * 3)]
+        let computerChoice = choices[Math.floor(Math.random() * 3)]
         console.log(computerChoice)
         if (userChoice === "rock" && computerChoice === "rock") {
             alert("It's a tie!")
         }
-        else if (userChoice === "rock" && computerChoice === "paper") {
+          else if (userChoice === "rock" && computerChoice === "paper") {
             alert("You lose!")
         }
         else if (userChoice === "rock" && computerChoice === "scissors") {
@@ -38,13 +38,5 @@ function startRockPaperScissorGame() {
             alert("You win!")
         }
 
-
-
-    } else {
-        startRockPaperScissorGame();
     }
 }
-
-
-
-startRockPaperScissorGame();
